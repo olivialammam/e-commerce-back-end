@@ -27,5 +27,6 @@ The following animations show examples of the application's API routes being tes
 The first animation shows GET routes to return all categories, all products, and all tags being tested in Insomnia:![mockup](https://user-images.githubusercontent.com/95842420/172130531-93f2cc3c-2985-43d1-b71d-706df477b370.gif)
 
 # GitHub
+https://github.com/olivialammam/e-commerce-back-end
 
 # Link To Video Demonstration
