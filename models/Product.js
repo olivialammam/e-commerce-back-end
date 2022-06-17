@@ -1,7 +1,7 @@
 // import important parts of sequelize library
 const { Model, DataTypes } = require('sequelize');
 const { NUMERIC } = require('sequelize/lib/data-types');
-const DataTypes = require('sequelize/lib/dialects/postgres/data-types');
+// const DataTypes = require('sequelize/lib/dialects/postgres/data-types');
 // import our database connection from config.js
 const sequelize = require('../config/connection');
 

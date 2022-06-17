@@ -1,5 +1,5 @@
 const { Model, DataTypes } = require('sequelize');
-const DataTypes = require('sequelize/lib/dialects/postgres/data-types');
+// const DataTypes = require('sequelize/lib/dialects/postgres/data-types');
 
 const sequelize = require('../config/connection');
 
