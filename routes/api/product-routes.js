@@ -11,13 +11,13 @@ router.get('/', (req, res) => {
     include: [
       {
         model: Category,
-        attributes: ['id', 'category_name']
+        attributes: ['id', 'catergory_name']
       },
       {
         model: Tag,
         attributes: ['id', 'tag_name'],
         through: ProductTag,
-        as: 'tagged_products'
+        as: 'tags'
       }
     ]
   })
@@ -39,13 +39,13 @@ router.get('/:id', (req, res) => {
     include: [
       {
         model: Category,
-        attributes: ['id', 'category_name']
+        attributes: ['id', 'catergory_name']
       },
       {
         model: Tag,
         attributes: ['id', 'tag_name'],
         through: ProductTag,
-        as: 'tagged_products'
+        as: 'tags'
       }
     ]
   })
@@ -76,11 +76,11 @@ router.post('/', (req, res) => {
   Product.create(req.body)
     .then((product) => {
       // if there's product tags, we need to create pairings to bulk create in the ProductTag model
-      if (req.body.tagIds.length) {
+      if (req.body.tagIds) {
         const productTagIdArr = req.body.tagIds.map((tag_id) => {
           return {
             product_id: product.id,
-            tag_id,
+            tag_id: tag.id,
           };
         });
         return ProductTag.bulkCreate(productTagIdArr);
