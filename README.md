@@ -30,3 +30,4 @@ The first animation shows GET routes to return all categories, all products, and
 https://github.com/olivialammam/e-commerce-back-end
 
 # Link To Video Demonstration
+https://youtu.be/cN1HcksI4sY
